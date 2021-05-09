@@ -8,24 +8,24 @@ conf = {
     'github_client_secret': '<add_client_secret_here>',
     'github_authorize_url': 'https://github.com/login/oauth/authorize',
     'self_repo_url': 'https://github.com/ForksInc/knife',
+    'state': "<generate_uuid_here>"
 }
 
 application = Flask(__name__)
-state = "<generate_uuid_here>"
 
 @application.route("/")
 def hello():
     return '''
     <h1 style='color:blue'>Want to fork the knife repo?</h1>
     <p><a href="{url}?client_id={client_id}&state={state}&scope=repo">Absolutely!</a></p>
-    '''.format(url=conf['github_authorize_url'], client_id=conf['github_client_id'], state=state)
+    '''.format(url=conf['github_authorize_url'], client_id=conf['github_client_id'], state=conf['state'])
 
 @application.route("/authenticated/")
 def authenticated():
     try:
         code = request.args['code']
         responded_state = request.args['state']
-        if (responded_state != state):
+        if (responded_state != conf['state']):
             raise Exception
     except:
         return '''
@@ -61,7 +61,7 @@ def get_token(code):
         'client_id': conf['github_client_id'],
         'client_secret': conf['github_client_secret'],
         'code': code,
-        'state': "jkhkjh"
+        'state': conf['state']
     }
     headers = {'Accept': 'application/json'}
     response = requests.post(url, data=data, headers=headers)

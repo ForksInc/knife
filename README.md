@@ -13,7 +13,10 @@ Knife
 * https://docs.github.com/en/rest/reference/repos#forks
 
 ## To set up and run locally
-* Install prereqs
-* run python3 knife.py
+* go here and create a new app: https://github.com/settings/applications/new
+* obtain client id and client secret
+* add `github_client_id`, `github_client_secret`, and a unique `state` to your conf (around line 6 of [knife.py])
+* install prereqs
+* run `python3 knife.py`
 
 
