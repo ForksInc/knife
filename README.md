@@ -15,7 +15,7 @@ Knife
 ## To set up and run locally
 * go here and create a new app: https://github.com/settings/applications/new
 * obtain client id and client secret
-* add `github_client_id`, `github_client_secret`, and a unique `state` to your conf (around line 6 of [knife.py])
+* add `github_client_id`, `github_client_secret`, and a unique `state` to your conf (around line 6 of [knife.py](knife.py))
 * install prereqs
 * run `python3 knife.py`
 
