@@ -1,7 +1,7 @@
 
 import json
 import requests
-from flask import Flask, render_template, request
+from flask import Flask, request
 
 conf = {
     'github_client_id': '<add_client_id_here>',
