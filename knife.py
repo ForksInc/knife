@@ -4,14 +4,14 @@ import requests
 from flask import Flask, render_template, request
 
 conf = {
-    'github_client_id': 'cd88fcd54ec2d4020d03',
-    'github_client_secret': 'e01a66ac4a63fe81f1e4ca3f7787560d0e3a9d7b',
+    'github_client_id': '<add_client_id_here>',
+    'github_client_secret': '<add_client_secret_here>',
     'github_authorize_url': 'https://github.com/login/oauth/authorize',
     'self_repo_url': 'https://github.com/ForksInc/knife',
 }
 
 application = Flask(__name__)
-state = "Z70tYH9R584SCsuOBqGFC9FBafRICc3YZAWE"
+state = "<generate_uuid_here>"
 
 @application.route("/")
 def hello():
