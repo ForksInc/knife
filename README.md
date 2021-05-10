@@ -1,5 +1,6 @@
-# K N I F E
-Do you like overthinking? Do you like overkill? Well you're going to love Knife, a fake hypothetical project. Maintained by Forks Inc, a fake up and coming startup. 
+# 🔪 K N I F E 🔪
+Do you like overthinking? Do you like overkill? Well you're going to love Knife, a fake hypothetical project. 
+Maintained by Forks Inc, a fake up and coming startup. 
 
 ## Summary
 A project that integrates with the github api in order to fork itself. Run it with flask to try it out. 
@@ -11,7 +12,7 @@ Once you've got the flask app running, go to the browser and click "I want to fo
 * Python 3.x
 * Flask  
 * Requests
-* A github account with an oauth app configured.
+* A github account with an oauth app configured
 
 ## References
 * https://docs.github.com/en/developers/apps/authorizing-oauth-apps
@@ -32,8 +33,8 @@ Once you've got the flask app running, go to the browser and click "I want to fo
 ## To fork this repo
 * Option #1: Set up everything on a dev server (above), go to http://localhost:5000, click on the link.
 * Option #2: [Click here](https://github.com/ForksInc/knife/fork).
-* Option #3: write a slack bot that automatically provisions a vm, starts knife.py, and sends you the link that you can then click!
-* Option #4: hire an intern and ask them to do it.
+* Option #3: Write a slack bot that automatically provisions a vm, starts knife.py, and sends you the link that you can then click!
+* Option #4: Hire an intern and ask them to do it.
 
 ## A product backlog of sorts
 In no particular order...
