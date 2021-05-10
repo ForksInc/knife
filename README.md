@@ -47,6 +47,6 @@ In no particular order...
 * Don't run flask dev server for prod - instead consider uwsgi/nginx, for example.
 * Add more functionality beyond what already ([exists](https://github.com/ForksInc/knife/fork)) in github natively.
 * Find a use case for this.
-* Create IOS/Android app, preferably with in-app purchases - fork with flair?
-* Get a youth to do something with it on tiktok. 
+* Create IOS/Android app, preferably with ads and in-app purchases - fork with flair?
+* Convince a youth to do something with it on tiktok. 
 * Get VC funding $$$$$.
