@@ -23,7 +23,7 @@ Once you've got the flask app running, go to the browser and click "I want to fo
 ## To set up and run locally (dev only)
 * go here and create a new app: https://github.com/settings/applications/new
     * use http://localhost:5000/ as the home
-    * use http://127.0.0.1:5000/authenticated/
+    * use http://localhost:5000/authenticated/
 * obtain client id and client secret from github app setup
 * add `github_client_id`, `github_client_secret` to your conf (around line 6 of [knife.py](knife.py))
 * add a unique `state` to the conf object
