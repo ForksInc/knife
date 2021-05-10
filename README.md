@@ -3,7 +3,7 @@ Do you like overthinking? Do you like overkill? Well you're going to love Knife,
 Maintained by Forks Inc, a fake up and coming startup. 
 
 ## Summary
-A project that integrates with the github api in order to fork itself. Run it with flask to try it out. 
+A project that integrates with the github api in order to fork itself. Run it with flask to try it out. The design is very human.
 
 ## Doing something
 Once you've got the flask app running, go to the browser and click "I want to fork knife."
